@@ -62,7 +62,7 @@ def register_original_dataset():
         dataset = Dataset.from_pandas(df)
         
         # Upload to Hugging Face Hub
-        dataset_name = "abhishek-kumar/tourism-package-prediction"
+        dataset_name = "u2jyothibhat/tourism_project"
         dataset.push_to_hub(
             dataset_name,
             private=False,
