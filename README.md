@@ -83,8 +83,8 @@ tourism_project/
 
 ## Live Links
 
-- **Streamlit App**: https://huggingface.co/spaces/u2jyothibhat/TourismProject
-- **Original Dataset**: https://huggingface.co/datasets/u2jyothibhat/tourism-package-prediction
+- **Streamlit App**: https://huggingface.co/spaces/u2jyothibhat/Tourism Project
+- **Original Dataset**: https://huggingface.co/datasets/u2jyothibhat/tourism_project
 - **Train Dataset**: https://huggingface.co/datasets/u2jyothibhat/tourism-package-prediction-train
 - **Test Dataset**: https://huggingface.co/datasets/u2jyothibhat/tourism-package-prediction-test
 - **Model Hub**: https://huggingface.co/u2jyothibhat/tourism-package-prediction-model
@@ -206,6 +206,6 @@ GitHub Actions workflow (`/.github/workflows/pipeline.yml`):
 
 ---
 
-**Project by**: Abhishek Kumar  
+**Project by**: Jyothi K
 **MLOps Pipeline**: Tourism Package Prediction  
 **Framework**: End-to-end automated ML workflow 
