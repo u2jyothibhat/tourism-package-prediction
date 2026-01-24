@@ -83,7 +83,7 @@ tourism_project/
 
 ## Live Links
 
-- **Streamlit App**: https://huggingface.co/spaces/u2jyothibhat/Tourism Project
+- **Streamlit App**: https://huggingface.co/spaces/u2jyothibhat/tourism_project
 - **Original Dataset**: https://huggingface.co/datasets/u2jyothibhat/tourism_project
 - **Train Dataset**: https://huggingface.co/datasets/u2jyothibhat/tourism-package-prediction-train
 - **Test Dataset**: https://huggingface.co/datasets/u2jyothibhat/tourism-package-prediction-test
