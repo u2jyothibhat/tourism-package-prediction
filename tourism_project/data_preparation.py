@@ -23,7 +23,7 @@ def load_data_from_hf():
     """Load dataset from Hugging Face Hub"""
     try:
         print("Loading dataset from Hugging Face Hub...")
-        dataset = load_dataset("abhishek-kumar/tourism-package-prediction", split="train")
+        dataset = load_dataset("u2jyothibhat/tourism_project", split="train")
         df = dataset.to_pandas()
         print(f"Dataset loaded: {len(df)} rows, {len(df.columns)} columns")
         return df
@@ -166,7 +166,7 @@ def upload_processed_datasets():
         test_dataset = Dataset.from_pandas(test_df)
         
         # Upload train dataset
-        train_dataset_name = "abhishek-kumar/tourism-package-prediction-train"
+        train_dataset_name = "u2jyothibhat/tourism-package-prediction-train"
         train_dataset.push_to_hub(
             train_dataset_name,
             private=False,
@@ -175,7 +175,7 @@ def upload_processed_datasets():
         print(f"Train dataset uploaded: {train_dataset_name}")
         
         # Upload test dataset
-        test_dataset_name = "abhishek-kumar/tourism-package-prediction-test"
+        test_dataset_name = "u2jyothibhat/tourism-package-prediction-test"
         test_dataset.push_to_hub(
             test_dataset_name,
             private=False,
