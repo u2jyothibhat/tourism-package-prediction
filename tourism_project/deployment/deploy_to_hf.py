@@ -6,7 +6,7 @@ Deployment Script for Tourism Package Prediction Project
 from huggingface_hub import HfApi, login
 import os
 
-#login(token=HF_TOKEN)
+login(token=os.getenv('HF_TOKEN'))
 
 def deploy_to_huggingface_space():
     """Deploy application to HuggingFace Spaces"""
