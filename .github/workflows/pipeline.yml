@@ -97,6 +97,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install huggingface-hub
+          pip install numpy 1.16.1
       
       - name: Push files to Frontend Hugging Face Space
         env:
