@@ -20,13 +20,19 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     """Load the trained model from HuggingFace Hub"""
-    #try:
-        model_path = hf_hub_download(
-            repo_id="u2jyothibhat/tourism-package-prediction-model",
-            filename="best_model.joblib"
+    model_path = hf_hub_download(
+        repo_id="u2jyothibhat/tourism-package-prediction-model",
+        filename="best_model.joblib"
         )
-        model = joblib.load(model_path)
-        return model
+    model = joblib.load(model_path)
+    return model
+    #try:
+        #model_path = hf_hub_download(
+        #    repo_id="u2jyothibhat/tourism-package-prediction-model",
+        #    filename="best_model.joblib"
+        #)
+        #model = joblib.load(model_path)
+        #return model
     #except Exception as e:
         #st.error(f"Error loading model: {e}")
         #return None
