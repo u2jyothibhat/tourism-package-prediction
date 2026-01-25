@@ -20,16 +20,16 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     """Load the trained model from HuggingFace Hub"""
-    try:
+    #try:
         model_path = hf_hub_download(
             repo_id="u2jyothibhat/tourism-package-prediction-model",
             filename="best_model.joblib"
         )
         model = joblib.load(model_path)
         return model
-    except Exception as e:
-        st.error(f"Error loading model: {e}")
-        return None
+    #except Exception as e:
+        #st.error(f"Error loading model: {e}")
+        #return None
 
 def prepare_input_data(age, gender, marital_status, city_tier, type_of_contact,
                       occupation, designation, monthly_income, num_person_visiting,
@@ -90,9 +90,9 @@ def main():
 
     # Load model
     model = load_model()
-    if model is None:
-        st.error("Failed to load the prediction model.")
-        return
+    #if model is None:
+    #    st.error("Failed to load the prediction model.")
+    #    return
 
     # Sidebar inputs
     st.sidebar.header("Customer Information")
