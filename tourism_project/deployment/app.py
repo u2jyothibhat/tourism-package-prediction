@@ -23,7 +23,7 @@ def load_model():
     
     try:
         model_path = hf_hub_download(
-            repo_id="u2jyothibhat/tourism-package-prediction-model/blob/main/",
+            repo_id="u2jyothibhat/tourism-package-prediction-model",
             filename="best_model.joblib"
         )
         model = joblib.load(model_path)
